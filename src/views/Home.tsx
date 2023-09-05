@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from 'react'
 import { Howl } from 'howler';
 import { useNavigate } from 'react-router-dom'
 import { Music, getMusicPageUrl } from '../utils';
+import axios from 'axios';
 
 const Home = () => {
   const navigate = useNavigate()
@@ -29,6 +30,9 @@ const Home = () => {
 
     // const result = await axios('https://netease-cloud-music-api-neon-beta.vercel.app/artist/songs?id=6452');
     // console.log(result)
+
+   const res = await axios('https://cdn.jsdelivr.net/gh/claude-hub/node@main/packages/music/musics/artists/index.json');
+    console.log(res.data);
   }
 
   useEffect(() => {

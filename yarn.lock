@@ -2579,6 +2579,13 @@ react-router@6.15.0:
   dependencies:
     "@remix-run/router" "1.8.0"
 
+react-use-audio-player@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmmirror.com/react-use-audio-player/-/react-use-audio-player-2.1.1.tgz#09a8df3d10e5ef8006f48976bdda5d013994ea85"
+  integrity sha512-zPEW+NKZUBIZjN7YbMQeGCo6eoDVCuTcZrzQBcYfursBiIXcGGInY0ioodqnz8FvJZad9BM2yJIfNwuDGeSqGA==
+  dependencies:
+    howler "^2.2.3"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmmirror.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
