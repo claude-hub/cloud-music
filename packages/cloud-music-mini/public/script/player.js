@@ -458,7 +458,6 @@ class UiAudio extends HTMLElement {
         if (loop !== '1' || loop != '2') {
             return '0';
         }
-        return false;
     }
 
     set duration (value) {
@@ -573,6 +572,15 @@ class UiAudio extends HTMLElement {
                 onload: () => {
                     // 事件触发
                     this.dispatchEvent(new CustomEvent('load'));
+                },
+                onloaderror: (e) => {
+                    // 事件触发
+                    this.dispatchEvent(new CustomEvent('error', {
+                        detail: {
+                            type: 'loaderror',
+                            e
+                        }
+                    }));
                 },
                 onend: () => {
                     // 事件触发
