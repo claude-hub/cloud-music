@@ -1034,7 +1034,7 @@
   resolved "https://registry.npmmirror.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.21.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.22.15"
   resolved "https://registry.npmmirror.com/@babel/runtime/-/runtime-7.22.15.tgz"
   integrity sha512-T0O+aa+4w0u06iNmapipJXMV4HoUir03hpx3/YqXXhu9xim3w+dVphjFWl1OH8NbZHw5Lbm9k45drDkgq2VNNA==
@@ -1074,6 +1074,109 @@
     "@babel/helper-string-parser" "^7.22.5"
     "@babel/helper-validator-identifier" "^7.22.15"
     to-fast-properties "^2.0.0"
+
+"@better-scroll/core@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/core/-/core-2.5.1.tgz"
+  integrity sha512-koKOuYA55dQ04FJRIVUpMGDr1hbCfWmfX0MGp1hKagkQSWSRpwblqACiwtggVauoj9aaJRJZ9hDsTM4weaavlg==
+  dependencies:
+    "@better-scroll/shared-utils" "^2.5.1"
+
+"@better-scroll/indicators@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/indicators/-/indicators-2.5.1.tgz"
+  integrity sha512-Hk+Y00pR6fTsu6C9HGg1yYZtsu1gAcTgcs4C9aM5h6fQANX/T2YIYrOSjZmdL+js2PTcXJWZS8VM4Xjoi1PbfQ==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/infinity@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/infinity/-/infinity-2.5.1.tgz"
+  integrity sha512-GKHrrasIh0KlGzhASHDo5hEEBJcDFpP4XaZGPH9Ey8+QBH6/O1ykAXS2ixkVAOTkBrv+KgFXoCUr4oN1xWeM+g==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/mouse-wheel@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/mouse-wheel/-/mouse-wheel-2.5.1.tgz"
+  integrity sha512-DGnrirRMY6zMM7xwgx09D/cA9A//3J1/uDkq8iBVEyE5p0sEr/keQpjEfFHGkBRa505BnbBwdbN6f5lugEDSPw==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/movable@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/movable/-/movable-2.5.1.tgz"
+  integrity sha512-8bLPRY15bbK4K5+tjrtdaKsFFKmJx72wRdg+xz3xQGFcTD940HFkJiORSOcz8Ufue7eOJfcmreQJBw6XY+TqTw==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/nested-scroll@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/nested-scroll/-/nested-scroll-2.5.1.tgz"
+  integrity sha512-3cRsARxf9tq1VWBq7YAaET0xGAmgY1ERMmnXDo2gHFrmsJoNOionlpAeHdZvKQp2jG7JrzJ1O27nGCXf40gnkw==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/observe-dom@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/observe-dom/-/observe-dom-2.5.1.tgz"
+  integrity sha512-TCMGFLRfpXBPIwtUV/efliUmfmrhSNI7NXdSyjdWjsLOS7dh3eFkmcom5ERVWMaXVELSmujGXLqobT+dT0C/jg==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/observe-image@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/observe-image/-/observe-image-2.5.1.tgz"
+  integrity sha512-0Lhfj83o8EESwOxr8bfStCzNOokTm3KB7JeyMS8u/xl+3tyTuls9889cyAukYk4Yly1cS49pCGfj2P8YOiwtUg==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/pull-down@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/pull-down/-/pull-down-2.5.1.tgz"
+  integrity sha512-Y6XcGu2NlevPg3k9VBRRFvpmfoTA+rO96JGdog2qKHclIPNXnsVwsIHtZfAm9weE/f9UuC4BnB+VUFRlucfupg==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/pull-up@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/pull-up/-/pull-up-2.5.1.tgz"
+  integrity sha512-1hu3xSMxdB8T391KffpNZ7g93lMwZEHjfb1F1Y4KvIkciDt8nXqkGpqrZF+YwR+EJTgYcWqUO8kgmI6XXu7Pkg==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/scroll-bar@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/scroll-bar/-/scroll-bar-2.5.1.tgz"
+  integrity sha512-i6r60pWG/ztkFK2j5Gj54I0LJb2jGh5TWJNQBoW0gUkp28B+0JvBFTwZn9tF7beZCBorKR7Hvvu4O9A1TJy94Q==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/shared-utils@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/shared-utils/-/shared-utils-2.5.1.tgz"
+  integrity sha512-AplkfSjXVYP9LZiD6JsKgmgQJ/mG4uuLmBuwLz8W5OsYc7AYTfN8kw6GqZ5OwCGoXkVhBGyd8NeC4xwYItp0aw==
+
+"@better-scroll/slide@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/slide/-/slide-2.5.1.tgz"
+  integrity sha512-aDOrfsmjAcz6DXN7mDX3tPieAn195R43Yn9e3waI19TIEok/mQlI1a/kb5quqWOoxkiaZQ8xe3vx5ZTj9C+F6Q==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/wheel@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/wheel/-/wheel-2.5.1.tgz"
+  integrity sha512-fYLcEvkh88Z/2L+P5/+SGMunuc+HzAjGOiORIa/x21qb/knO2RFH4A/V1Rt3OIW4QluWzuFnU6jJRPlsQVZ4fg==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/zoom@^2.5.1":
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/@better-scroll/zoom/-/zoom-2.5.1.tgz"
+  integrity sha512-aGvFY5ooeZWS4RcxQLD+pGLpQHQxpPy0sMZV3yadcd2QK53PK9gS4Dp+BYfRv8lZ4/P2LoNEhr6Wq1DN6+uPlA==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
 
 "@emotion/is-prop-valid@^1.2.1":
   version "1.2.1"
@@ -1731,6 +1834,14 @@
     "@tufjs/canonical-json" "1.0.0"
     minimatch "^9.0.0"
 
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "http://npm.fe.sensorsdata.cn/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/js-cookie@^2.x.x":
   version "2.2.7"
   resolved "https://registry.npmmirror.com/@types/js-cookie/-/js-cookie-2.2.7.tgz"
@@ -1791,6 +1902,11 @@
   version "4.2.0"
   resolved "https://registry.npmmirror.com/@types/stylis/-/stylis-4.2.0.tgz"
   integrity sha512-n4sx2bqL0mW1tvDf/loQ+aMX7GQD3lc3fkCMC55VFNDu/vBOabO+LTIeXKM14xK0ppk5TUGcWRjiSpIlUpghKw==
+
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "http://npm.fe.sensorsdata.cn/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz"
+  integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
 
 "@typescript-eslint/eslint-plugin@^6.0.0":
   version "6.6.0"
@@ -2224,6 +2340,26 @@ before-after-hook@^2.2.0:
   version "2.2.3"
   resolved "https://registry.npmmirror.com/before-after-hook/-/before-after-hook-2.2.3.tgz"
   integrity sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==
+
+better-scroll@^2.5.1:
+  version "2.5.1"
+  resolved "http://npm.fe.sensorsdata.cn/better-scroll/-/better-scroll-2.5.1.tgz"
+  integrity sha512-OiF3cQroRfTzf+CRQH2z1G52ZAlNHINI6lCAvDmyFu0o0nRuTaV9F+fmBGIU2BL5p5IplUQ4E7sYa1TLfZarzQ==
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+    "@better-scroll/indicators" "^2.5.1"
+    "@better-scroll/infinity" "^2.5.1"
+    "@better-scroll/mouse-wheel" "^2.5.1"
+    "@better-scroll/movable" "^2.5.1"
+    "@better-scroll/nested-scroll" "^2.5.1"
+    "@better-scroll/observe-dom" "^2.5.1"
+    "@better-scroll/observe-image" "^2.5.1"
+    "@better-scroll/pull-down" "^2.5.1"
+    "@better-scroll/pull-up" "^2.5.1"
+    "@better-scroll/scroll-bar" "^2.5.1"
+    "@better-scroll/slide" "^2.5.1"
+    "@better-scroll/wheel" "^2.5.1"
+    "@better-scroll/zoom" "^2.5.1"
 
 binary-extensions@^2.0.0:
   version "2.2.0"
@@ -2689,6 +2825,17 @@ cosmiconfig@^8.2.0:
     parse-json "^5.2.0"
     path-type "^4.0.0"
 
+create-keyframe-animation@^0.1.0:
+  version "0.1.0"
+  resolved "http://npm.fe.sensorsdata.cn/create-keyframe-animation/-/create-keyframe-animation-0.1.0.tgz"
+  integrity sha1-Brjz4I7PtT+Afu2RBD5cocQNWYc=
+  dependencies:
+    load-styles "^2.0.0"
+    lodash.defaults "^3.1.2"
+    native-promisify-if-present "^1.0.1"
+    prefixed-event "^1.0.4"
+    transform-property "0.0.1"
+
 cross-spawn@^7.0.0, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.3.tgz"
@@ -2850,6 +2997,14 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dom-helpers@^5.0.1:
+  version "5.2.1"
+  resolved "http://npm.fe.sensorsdata.cn/dom-helpers/-/dom-helpers-5.2.1.tgz"
+  integrity sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
 
 dom-serializer@^2.0.0:
   version "2.0.0"
@@ -3794,6 +3949,13 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
+  version "3.3.2"
+  resolved "http://npm.fe.sensorsdata.cn/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
+  dependencies:
+    react-is "^16.7.0"
+
 hosted-git-info@^2.1.4:
   version "2.8.9"
   resolved "https://registry.npmmirror.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz"
@@ -3912,9 +4074,14 @@ image-size@~0.5.0:
   resolved "https://registry.npmmirror.com/image-size/-/image-size-0.5.5.tgz"
   integrity sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==
 
+immutable@^4.0.0:
+  version "4.3.4"
+  resolved "https://registry.npmmirror.com/immutable/-/immutable-4.3.4.tgz#2e07b33837b4bb7662f288c244d1ced1ef65a78f"
+  integrity sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==
+
 immutable@^5.0.0-beta.4:
   version "5.0.0-beta.4"
-  resolved "https://registry.npmmirror.com/immutable/-/immutable-5.0.0-beta.4.tgz"
+  resolved "http://npm.fe.sensorsdata.cn/immutable/-/immutable-5.0.0-beta.4.tgz"
   integrity sha512-sl9RE3lqd2LoQSESc8VV0k8qE9y57iT7dinq3Q+8mR2dqReHDZlgUrudzmFfZhDXBLXlNJMVWv3SG1YpQIokig==
 
 import-fresh@^3.2.1, import-fresh@^3.3.0:
@@ -4104,6 +4271,11 @@ is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz"
   integrity sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==
+
+is-function@^1.0.1:
+  version "1.0.2"
+  resolved "http://npm.fe.sensorsdata.cn/is-function/-/is-function-1.0.2.tgz"
+  integrity sha512-lw7DUp0aWXYg+CBCN+JKkcE0Q2RayZnSvnZBlwgxHBQhqt5pZNVy4Ri7H9GmmXkdu7LUthszM+Tor1u/2iBcpQ==
 
 is-generator-function@^1.0.10:
   version "1.0.10"
@@ -4618,6 +4790,11 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
+load-styles@^2.0.0:
+  version "2.0.0"
+  resolved "http://npm.fe.sensorsdata.cn/load-styles/-/load-styles-2.0.0.tgz"
+  integrity sha1-oJAcj4DvDIaUVOtYC078LwvkhHE=
+
 locate-path@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/locate-path/-/locate-path-2.0.0.tgz"
@@ -4640,20 +4817,98 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash._baseassign@^3.0.0:
+  version "3.2.0"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz"
+  integrity sha1-jDigmVAPIVrQnlnxci/QxSv+Ck4=
+  dependencies:
+    lodash._basecopy "^3.0.0"
+    lodash.keys "^3.0.0"
+
+lodash._basecopy@^3.0.0:
+  version "3.0.1"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz"
+  integrity sha1-jaDmqHbPNEwK2KVIghEd08XHyjY=
+
+lodash._bindcallback@^3.0.0:
+  version "3.0.1"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._createassigner@^3.0.0:
+  version "3.1.1"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz"
+  integrity sha1-g4pbri/aymOsIt7o4Z+k5taXCxE=
+  dependencies:
+    lodash._bindcallback "^3.0.0"
+    lodash._isiterateecall "^3.0.0"
+    lodash.restparam "^3.0.0"
+
+lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._getnative/-/lodash._getnative-3.9.1.tgz"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
+
+lodash._isiterateecall@^3.0.0:
+  version "3.0.9"
+  resolved "http://npm.fe.sensorsdata.cn/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz"
+  integrity sha1-UgOte6Ql+uhCRg5pbbnPPmqsBXw=
+
+lodash.assign@^3.0.0:
+  version "3.2.0"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.assign/-/lodash.assign-3.2.0.tgz"
+  integrity sha1-POnwI0tLIiPilrj6CsH+6OvKZPo=
+  dependencies:
+    lodash._baseassign "^3.0.0"
+    lodash._createassigner "^3.0.0"
+    lodash.keys "^3.0.0"
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmmirror.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
+lodash.defaults@^3.1.2:
+  version "3.1.2"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.defaults/-/lodash.defaults-3.1.2.tgz"
+  integrity sha1-xzCLGNv4vJNy1wGnNJPGEZK9Liw=
+  dependencies:
+    lodash.assign "^3.0.0"
+    lodash.restparam "^3.0.0"
+
+lodash.isarguments@^3.0.0:
+  version "3.1.0"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz"
+  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
+
+lodash.isarray@^3.0.0:
+  version "3.0.4"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.isarray/-/lodash.isarray-3.0.4.tgz"
+  integrity sha1-eeTriMNqgSKvhvhEqpvNhRtfu1U=
 
 lodash.ismatch@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npmmirror.com/lodash.ismatch/-/lodash.ismatch-4.4.0.tgz"
   integrity sha512-fPMfXjGQEV9Xsq/8MTSgUf255gawYRbjwMyDbcvDhXgV7enSZA0hynz6vMPnpAb5iONEzBHBPsT+0zes5Z301g==
 
+lodash.keys@^3.0.0:
+  version "3.1.2"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.keys/-/lodash.keys-3.1.2.tgz"
+  integrity sha1-TbwEcrFWvlCgsoaFXRvQsMZWCYo=
+  dependencies:
+    lodash._getnative "^3.0.0"
+    lodash.isarguments "^3.0.0"
+    lodash.isarray "^3.0.0"
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmmirror.com/lodash.merge/-/lodash.merge-4.6.2.tgz"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+lodash.restparam@^3.0.0:
+  version "3.6.1"
+  resolved "http://npm.fe.sensorsdata.cn/lodash.restparam/-/lodash.restparam-3.6.1.tgz"
+  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash@^4.17.21:
   version "4.17.21"
@@ -4978,6 +5233,13 @@ nanoid@^3.3.6:
   version "3.3.6"
   resolved "https://registry.npmmirror.com/nanoid/-/nanoid-3.3.6.tgz"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
+
+native-promisify-if-present@^1.0.1:
+  version "1.0.1"
+  resolved "http://npm.fe.sensorsdata.cn/native-promisify-if-present/-/native-promisify-if-present-1.0.1.tgz"
+  integrity sha1-eMebDcOcWpSzrQ9Gd9ZLcXD0guI=
+  dependencies:
+    is-function "^1.0.1"
 
 natural-compare@^1.4.0:
   version "1.4.0"
@@ -5657,6 +5919,11 @@ postcss@^8.4.23, postcss@^8.4.27:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+prefixed-event@^1.0.4:
+  version "1.0.4"
+  resolved "http://npm.fe.sensorsdata.cn/prefixed-event/-/prefixed-event-1.0.4.tgz"
+  integrity sha1-I+klzfsQmq6qQeyR04yRxREEKqc=
+
 prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npmmirror.com/prelude-ls/-/prelude-ls-1.2.1.tgz"
@@ -5701,9 +5968,9 @@ promzard@^1.0.0:
   dependencies:
     read "^2.0.0"
 
-prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
-  resolved "https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz"
+  resolved "http://npm.fe.sensorsdata.cn/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
   dependencies:
     loose-envify "^1.4.0"
@@ -5755,15 +6022,27 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-is@^16.13.1:
+react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-is@^18.0.0:
   version "18.2.0"
-  resolved "https://registry.npmmirror.com/react-is/-/react-is-18.2.0.tgz"
+  resolved "http://npm.fe.sensorsdata.cn/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-redux@^8.1.2:
+  version "8.1.2"
+  resolved "http://npm.fe.sensorsdata.cn/react-redux/-/react-redux-8.1.2.tgz"
+  integrity sha512-xJKYI189VwfsFc4CJvHqHlDrzyFTY/3vZACbE+rr/zQ34Xx1wQfB4OTOSeOSNrF6BDVe8OOdxIrAnMGXA3ggfw==
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    hoist-non-react-statics "^3.3.2"
+    react-is "^18.0.0"
+    use-sync-external-store "^1.0.0"
 
 react-refresh@^0.14.0:
   version "0.14.0"
@@ -5791,6 +6070,16 @@ react-router@6.15.0:
   integrity sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg==
   dependencies:
     "@remix-run/router" "1.8.0"
+
+react-transition-group@^4.4.5:
+  version "4.4.5"
+  resolved "http://npm.fe.sensorsdata.cn/react-transition-group/-/react-transition-group-4.4.5.tgz"
+  integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react-use-audio-player@^2.1.1:
   version "2.1.1"
@@ -5908,6 +6197,23 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-immutable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/redux-immutable/-/redux-immutable-4.0.0.tgz#3a1a32df66366462b63691f0e1dc35e472bbc9f3"
+  integrity sha512-SchSn/DWfGb3oAejd+1hhHx01xUoxY+V7TeK0BKqpkLKiQPVFf7DYzEaKmrEVxsWxielKfSK9/Xq66YyxgR1cg==
+
+redux-thunk@^2.4.2:
+  version "2.4.2"
+  resolved "http://npm.fe.sensorsdata.cn/redux-thunk/-/redux-thunk-2.4.2.tgz"
+  integrity sha512-+P3TjtnP0k/FEjcBL5FZpoovtvrTNT/UXd4/sluaSyrURlSlhLSzEdfsTBW7WsKB6yPvgd7q/iZPICFjW4o57Q==
+
+redux@^4.2.1:
+  version "4.2.1"
+  resolved "http://npm.fe.sensorsdata.cn/redux/-/redux-4.2.1.tgz"
+  integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
 
 reflect.getprototypeof@^1.0.3:
   version "1.0.4"
@@ -6443,7 +6749,7 @@ strong-log-transformer@2.1.0, strong-log-transformer@^2.1.0:
 
 styled-components@^6.0.7:
   version "6.0.7"
-  resolved "https://registry.npmmirror.com/styled-components/-/styled-components-6.0.7.tgz"
+  resolved "http://npm.fe.sensorsdata.cn/styled-components/-/styled-components-6.0.7.tgz"
   integrity sha512-xIwWuiRMYR43mskVsW9MGTRjSo7ol4bcVjT595fGUp3OLBJOlOgaiKaxsHdC4a2HqWKqKnh0CmcRbk5ogyDjTg==
   dependencies:
     "@babel/cli" "^7.21.0"
@@ -6583,6 +6889,11 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.npmmirror.com/tr46/-/tr46-0.0.3.tgz"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
+transform-property@0.0.1:
+  version "0.0.1"
+  resolved "http://npm.fe.sensorsdata.cn/transform-property/-/transform-property-0.0.1.tgz"
+  integrity sha1-SGNmL51eW7jwwAZI7/CL6xT9ZfI=
 
 trim-newlines@^3.0.0:
   version "3.0.1"
@@ -6784,6 +7095,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.0.0:
+  version "1.2.0"
+  resolved "http://npm.fe.sensorsdata.cn/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 utf8@^2.1.0:
   version "2.1.2"

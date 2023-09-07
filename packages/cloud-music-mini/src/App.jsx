@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useSetState } from 'ahooks';
+import Player from '@cloud/music-player';
 import { getArtists, getMusics } from "./api";
 import { Artists } from './components';
 
@@ -144,6 +145,7 @@ const App = () => {
         // src="https://music.163.com/song/media/outer/url?id=29774171.mp3"
       ></ui-audio>
       <Artists artists={artists} onClickItem={handleClickItem} />
+      <Player />
     </div>
   )
 }
