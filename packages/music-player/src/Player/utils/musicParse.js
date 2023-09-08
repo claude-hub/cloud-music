@@ -99,6 +99,6 @@ export const searchMusic = async (searchKey) => {
     return src;
   } catch (e) {
     console.log(e);
-    return [];
+    return '';
   }
 };

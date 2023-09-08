@@ -231,11 +231,15 @@ function Player(props) {
       errorCount.current += 1;
       return;
     } 
-    // 都播放失败后，实时获取音乐
-    const url = await searchMusic(`${getName(ar)}${name}`);
-    if (url) {
-      audioRef.current.src = url;
-      return
+    try {
+      // 都播放失败后，实时获取音乐
+      const url = await searchMusic(`${getName(ar)}${name}`);
+      if (url) {
+        audioRef.current.src = url;
+        return
+      }
+    } catch {
+      console.log('network error')
     }
 
     // 所有源都播放失败，则播放下一首
