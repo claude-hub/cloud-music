@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Detail, Home } from './views';
+import { Detail, Home, MusicPlayer } from './views';
 
 const RouteComp = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/player" element={<MusicPlayer />}></Route>
         <Route path="/singers/:name" element={<Detail />}></Route>
         {/* <Route path="/" element={<Layout />}> */}
         {/* <Route index element={<Home />} /> */}

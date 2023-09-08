@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useImperativeHandle, forwardRef } from "react";
 import { connect } from "react-redux";
 import {
   changePlayingState,
@@ -8,7 +8,8 @@ import {
   changePlayList,
   changePlayMode,
   changeFullScreen,
-  changeSpeed
+  changeSpeed,
+  changeSequecePlayList
 } from "./store/actionCreators";
 import { isEmptyObject, shuffle, findIndex, getSongUrl } from "./utils";
 import PlayList from "./play-list";
@@ -17,7 +18,8 @@ import Lyric from "./utils/lyric-parser";
 import MiniPlayer from "./mini-player";
 import NormalPlayer from "./normal-player";
 import { playMode } from "./utils/config";
-// import { getLyricRequest } from "./../../api/request";
+import { GlobalStyle } from "./style";
+import { IconStyle } from "../assets/iconfont/iconfont";
 
 function Player(props) {
   const [currentTime, setCurrentTime] = useState(0);
@@ -30,12 +32,13 @@ function Player(props) {
   const {
     speed,
     playing,
-    currentSong:immutableCurrentSong,
+    currentSong: immutableCurrentSong,
     currentIndex,
-    playList:immutablePlayList,
+    playList: immutablePlayList,
     mode,
     sequencePlayList: immutableSequencePlayList,
-    fullScreen
+    fullScreen,
+    refInstance
   } = props;
 
   const {
@@ -46,8 +49,20 @@ function Player(props) {
     changePlayListDispatch,
     changeModeDispatch,
     toggleFullScreenDispatch,
-    changeSpeedDispatch
+    changeSpeedDispatch,
+    changeSequecePlayListDispatch
   } = props;
+
+  useImperativeHandle(refInstance, () => ({
+    // 更新当前播放的歌曲
+    updateCurrentSone: changeCurrentDispatch,
+    // 更新当前的播放列表（随机、顺序、单曲）
+    updatePlayList: changePlayListDispatch,
+    // 更新初始播放列表（源数据）
+    updateOriginPlayList: changeSequecePlayListDispatch,
+    // 更新当前播放的index。
+    updatePlayIndex: changeCurrentIndexDispatch,
+  }))
 
   const playList = immutablePlayList.toJS();
   const sequencePlayList = immutableSequencePlayList.toJS();
@@ -61,7 +76,7 @@ function Player(props) {
   const currentLyric = useRef();
   const currentLineNum = useRef(0);
   const songReady = useRef(true);
- 
+
   useEffect(() => {
     if (
       !playList.length ||
@@ -70,7 +85,7 @@ function Player(props) {
       playList[currentIndex].id === preSong.id ||
       !songReady.current
     )
-    return;
+      return;
     songReady.current = false;
     let current = playList[currentIndex];
     changeCurrentDispatch(current);
@@ -101,7 +116,7 @@ function Player(props) {
   }, [fullScreen]);
 
   const handleLyric = ({ lineNum, txt }) => {
-    if(!currentLyric.current)return;
+    if (!currentLyric.current) return;
     currentLineNum.current = lineNum;
     setPlayingLyric(txt);
   };
@@ -205,8 +220,8 @@ function Player(props) {
   const clickPlaying = (e, state) => {
     e.stopPropagation();
     togglePlayingDispatch(state);
-    if(currentLyric.current) {
-      currentLyric.current.togglePlay(currentTime*1000);
+    if (currentLyric.current) {
+      currentLyric.current.togglePlay(currentTime * 1000);
     }
   };
 
@@ -298,11 +313,13 @@ function Player(props) {
     changeSpeedDispatch(newSpeed);
     audioRef.current.playbackRate = newSpeed;
     currentLyric.current.changeSpeed(newSpeed);
-    currentLyric.current.seek(currentTime*1000);
+    currentLyric.current.seek(currentTime * 1000);
   }
 
   return (
     <div>
+      <GlobalStyle />
+      <IconStyle />
       {isEmptyObject(currentSong) ? null : (
         <NormalPlayer
           song={currentSong}
@@ -390,12 +407,18 @@ const mapDispatchToProps = dispatch => {
     },
     changeSpeedDispatch(data) {
       dispatch(changeSpeed(data));
+    },
+    changeSequecePlayListDispatch(data) {
+      dispatch(changeSequecePlayList(data))
     }
   };
 };
 
 // 将ui组件包装成容器组件
-export default connect(
+const MusicPlayer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(React.memo(Player));
+
+
+export default forwardRef((props, ref) => <MusicPlayer {...props} refInstance={ref} />)

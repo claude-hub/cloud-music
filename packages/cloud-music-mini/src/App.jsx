@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useSetState } from 'ahooks';
-import Player from '@cloud/music-player';
+import Test from '@cloud/music-player';
 import { getArtists, getMusics } from "./api";
 import { Artists } from './components';
+
+console.log('====', Test);
 
 const App = () => {
   const audioRef = useRef();
@@ -17,17 +19,17 @@ const App = () => {
       // 暂停啦...
       console.log('--', error)
       const { detail = {} } = error || {};
-      if(detail.e) {
+      if (detail.e) {
         audio.next();
       }
     });
 
-     // 顺序播放和随机播放的处理
-     audio.addEventListener('play', function () {
+    // 顺序播放和随机播放的处理
+    audio.addEventListener('play', function () {
       console.log('=====')
       // 播放时的地址设置
       setSrc();
-  });
+    });
 
   }, []);
 
@@ -142,10 +144,9 @@ const App = () => {
         ref={audioRef}
         mode="html5"
         controls
-        // src="https://music.163.com/song/media/outer/url?id=29774171.mp3"
+      // src="https://music.163.com/song/media/outer/url?id=29774171.mp3"
       ></ui-audio>
       <Artists artists={artists} onClickItem={handleClickItem} />
-      <Player />
     </div>
   )
 }

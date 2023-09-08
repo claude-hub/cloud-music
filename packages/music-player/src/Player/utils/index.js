@@ -23,7 +23,7 @@ export const getName = (list) => {
 };
 
 // 给css3相关属性增加浏览器前缀，处理浏览器兼容性问题
-let elementStyle = document.createElement("div").style;
+let elementStyle = document.createElement('div').style;
 
 let vendor = (() => {
   //首先通过transition属性判断是何种浏览器
@@ -90,7 +90,5 @@ export const findIndex = (song, list) => {
 export const isEmptyObject = (obj) => !obj || Object.keys(obj).length === 0;
 
 //拼接出歌曲的url链接
-export const getSongUrl = (id) => {
-  console.log(`https://music.163.com/song/media/outer/url?id=${id}.mp3`);
-  return `https://music.163.com/song/media/outer/url?id=${id}.mp3`;
-};
+export const getSongUrl = (id) =>
+  `https://music.163.com/song/media/outer/url?id=${id}.mp3`;
