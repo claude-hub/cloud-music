@@ -7,6 +7,7 @@
   "scripts": {
     "start": "lerna run start --scope=@cloud/music",
     "start:mini": "lerna run start --scope=@cloud/music-mini",
+    "build:mini": "lerna run build --scope=@cloud/music-mini",
     "start:player": "lerna run start --scope=@cloud/music-player"
   },
   "dependencies": {},
