@@ -121,11 +121,11 @@ function PlayList(props) {
     clearPreSong();
   }
 
-  const getFavoriteIcon = (item) => {
-    return (
-      <i className="iconfont">&#xe601;</i>
-    )
-  }
+  // const getFavoriteIcon = (item) => {
+  //   return (
+  //     <i className="iconfont">&#xe601;</i>
+  //   )
+  // }
 
   const getCurrentIcon = (item) => {
     const current = currentSong.id === item.id;
@@ -223,9 +223,9 @@ function PlayList(props) {
                       <li className="item" key={item.id} onClick={() => handleChangeCurrentIndex(index)}>
                         {getCurrentIcon(item)}
                         <span className="text">{item.name} - {getName(item.ar)}</span>
-                        <span className="like">
+                        {/* <span className="like">
                           {getFavoriteIcon(item)}
-                        </span>
+                        </span> */}
                         <span className="delete" onClick={(e) => handleDeleteSong(e, item)}>
                           <i className="iconfont">&#xe63d;</i>
                         </span>

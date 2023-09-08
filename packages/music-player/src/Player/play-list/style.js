@@ -65,6 +65,7 @@ export const ListHeader = styled.div `
     .clear{
       ${style.extendClick()}
       font-size: ${style["font-size-l"]};
+      margin-right: 0;
     }
   }
 `
