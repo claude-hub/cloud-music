@@ -9,14 +9,5 @@ export const getArtists = async () => {
 
 export const getMusics = async (name) => {
   if (!name) return;
-  const { data = [] } = await axios(`${baseUrl}/${name}.json`);
-  return data.map((item) => {
-    const { name, singer, url, id } = item;
-    return {
-      ...item,
-      id,
-      title: `${singer} - ${name}`,
-      url: url[0],
-    };
-  });
+  return await axios(`${baseUrl}/${name}.json`);
 };

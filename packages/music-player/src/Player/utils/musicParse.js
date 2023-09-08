@@ -89,8 +89,9 @@ const getMusicSrc = (body) => {
  */
 export const searchMusic = async (searchKey) => {
   try {
-    const { data } = await proxy(encodePrintableCode(searchKey));
-    const url = parseHtmlAndGetData(data, searchKey);
+    const query = searchKey.replace(/\//g, '');
+    const { data } = await proxy(encodePrintableCode(query));
+    const url = parseHtmlAndGetData(data, query);
     if (!url) return;
 
     const { data: html } = await proxy(url);
